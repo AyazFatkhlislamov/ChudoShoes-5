@@ -21,6 +21,7 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" Text="Каталог обуви" FontSize="20" VerticalAlignment="Center" Foreground="#2A4B49"/>
                 <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button Name="BtnAnalytics" Content="Аналитика" Background="#70B2AF" Foreground="White" Padding="12,6" Margin="0,0,10,0" FontSize="14" Visibility="Collapsed" Click="BtnAnalytics_Click"/>
                     <Button Name="BtnOrders" Content="Управление заказами" Background="#70B2AF" Foreground="White" Padding="12,6" Margin="0,0,10,0" FontSize="14" Visibility="Collapsed" Click="BtnOrders_Click"/>
                     <Button Name="BtnCart" Content="Текущий заказ (0)" Background="#70B2AF" Foreground="White" Padding="12,6" Margin="0,0,20,0" FontSize="14" Visibility="Collapsed" Click="BtnCart_Click"/>
                     <StackPanel VerticalAlignment="Center">

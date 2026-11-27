@@ -32,6 +32,9 @@ namespace ChudoShoes
                 {
                     BtnOrders.Visibility = Visibility.Collapsed;
                 }
+
+                // Раздел «Аналитика» доступен только администратору
+                BtnAnalytics.Visibility = _currentUser.ID_Role == 1 ? Visibility.Visible : Visibility.Collapsed;
             }
             else
             {
@@ -40,6 +43,7 @@ namespace ChudoShoes
                 FiltersWrapPanel.IsEnabled = false;
                 BtnOrders.Visibility = Visibility.Collapsed;
                 BtnCart.Visibility = Visibility.Collapsed;
+                BtnAnalytics.Visibility = Visibility.Collapsed;
             }
 
             LoadCategories();
@@ -83,6 +87,11 @@ namespace ChudoShoes
         private void BtnOrders_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.Navigate(new OrdersPage(_currentUser));
+        }
+
+        private void BtnAnalytics_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AnalyticsPage(_currentUser));
         }
 
         private void ProductListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
