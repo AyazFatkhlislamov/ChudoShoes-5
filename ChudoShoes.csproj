@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
       <HintPath>packages\BouncyCastle.Cryptography.2.7.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
@@ -219,6 +222,7 @@
       <DependentUpon>ChusoShoesModel.edmx</DependentUpon>
       <LastGenOutput>ChusoShoesModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="icon.ico" />
     <Resource Include="res\icon.ico" />
     <Resource Include="res\Images\IMG_KB_164811.png" />
     <Resource Include="res\Images\IMG_KB_164816.png" />
