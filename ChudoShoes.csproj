@@ -206,6 +206,7 @@
       <DependentUpon>ChusoShoesModel.edmx</DependentUpon>
       <LastGenOutput>ChusoShoesModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="res\icon.ico" />
     <Resource Include="res\Images\IMG_KB_164811.png" />
     <Resource Include="res\Images\IMG_KB_164816.png" />
     <Resource Include="res\Images\IMG_KB_185501.png" />
