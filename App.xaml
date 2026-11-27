@@ -1,0 +1,45 @@
+﻿<Application x:Class="ChudoShoes.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ChudoShoes"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- Цветовая палитра по руководству стиля компании -->
+        <SolidColorBrush x:Key="MainBgBrush" Color="#FFFFFF"/>
+        <SolidColorBrush x:Key="SecondaryBgBrush" Color="#D2F6E7"/>
+        <SolidColorBrush x:Key="AccentColorBrush" Color="#70B2AF"/>
+
+        <!-- Принудительный шрифт Calibri для всех типов элементов -->
+        <Style TargetType="Window">
+            <Setter Property="FontFamily" Value="Calibri"/>
+        </Style>
+        <Style TargetType="Page">
+            <Setter Property="FontFamily" Value="Calibri"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Calibri"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Calibri"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="FontFamily" Value="Calibri"/>
+        </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="FontFamily" Value="Calibri"/>
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="FontFamily" Value="Calibri"/>
+        </Style>
+
+        <!-- Единый стиль кнопок -->
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Calibri"/>
+            <Setter Property="Background" Value="{StaticResource AccentColorBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="10,4"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+    </Application.Resources>
+</Application>

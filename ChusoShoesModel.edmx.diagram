@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ca380f8032a743b49143929f0c1048e9" Name="Diagram1">
+        <EntityTypeShape EntityType="ChudoShoesFatkhlislamovDBModel.Category" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChudoShoesFatkhlislamovDBModel.Manufacturer" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChudoShoesFatkhlislamovDBModel.Order" Width="1.5" PointX="10.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChudoShoesFatkhlislamovDBModel.OrderItem" Width="1.5" PointX="12.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChudoShoesFatkhlislamovDBModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChudoShoesFatkhlislamovDBModel.Role" Width="1.5" PointX="5.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChudoShoesFatkhlislamovDBModel.Size" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChudoShoesFatkhlislamovDBModel.StockItem" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChudoShoesFatkhlislamovDBModel.Subcategory" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChudoShoesFatkhlislamovDBModel.User" Width="1.5" PointX="8" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="ChudoShoesFatkhlislamovDBModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="ChudoShoesFatkhlislamovDBModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="ChudoShoesFatkhlislamovDBModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ChudoShoesFatkhlislamovDBModel.FK_OrderItem_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="ChudoShoesFatkhlislamovDBModel.FK_Product_Subcategory" ManuallyRouted="false" />
+        <AssociationConnector Association="ChudoShoesFatkhlislamovDBModel.FK_StockItem_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ChudoShoesFatkhlislamovDBModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="ChudoShoesFatkhlislamovDBModel.FK_StockItem_Size" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

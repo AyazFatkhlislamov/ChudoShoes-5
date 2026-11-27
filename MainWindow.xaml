@@ -1,0 +1,38 @@
+﻿<Window x:Class="ChudoShoes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChudoShoes"
+        mc:Ignorable="d"
+        Title="Чудо Обувь"
+        Icon="/res/Чудо Обувь.png"
+        Height="720" Width="1050"
+        MinHeight="580" MinWidth="900"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Calibri">
+    <Grid Background="#FFFFFF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Шапка с дополнительным фоном #D2F6E7 без дублирования текста -->
+        <Border Grid.Row="0" Background="#D2F6E7" Padding="15,5">
+            <Grid>
+                <Image HorizontalAlignment="Left" VerticalAlignment="Center"
+                       Source="/res/Чудо Обувь.png" Height="55" Stretch="Uniform" Margin="10,0,0,0"/>
+
+                <TextBlock Text="Чудо Обувь" FontSize="26"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#2A4B49"/>
+
+                <Button Name="BtnBack" Content="Назад" Width="90" Height="32"
+                        HorizontalAlignment="Right" VerticalAlignment="Center"
+                        Background="#70B2AF" Foreground="White"
+                        Click="BtnBack_Click" Margin="0,0,10,0"/>
+            </Grid>
+        </Border>
+
+        <Frame Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered"/>
+    </Grid>
+</Window>
